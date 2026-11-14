@@ -1,0 +1,10 @@
+/* подсветка блоков в предпросмотре редактора (на сайт не попадает) */
+html{scroll-behavior:auto}
+[data-bid]{position:relative;cursor:pointer;transition:outline-color .15s}
+[data-bid]:hover{outline:1px dashed color-mix(in srgb,var(--focus) 70%,transparent);outline-offset:-2px}
+[data-bid].av-sel{outline:2px solid var(--focus);outline-offset:-2px}
+[data-f]:hover{box-shadow:0 0 0 1px color-mix(in srgb,var(--focus) 60%,transparent)}
+.blk-hidden{display:none}
+.blk-empty{min-height:24px}
+.rv{opacity:1!important;transform:none!important}
+a,button{cursor:pointer}
